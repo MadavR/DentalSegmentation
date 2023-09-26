@@ -1,14 +1,13 @@
-![Alt text](../figs/ans_banner_1920x200.png)
+![Alt text](figs/ans_banner_1920x200.png)
 
 # Desarrollo de un Modelo de Segmentación de Afecciones Dentales en Radiografías Panorámicas de Niños y Adultos utilizando Aprendizaje No Supervisado
 
-Este proyecto se centra en la aplicación de técnicas de aprendizaje de máquina, específicamente el aprendizaje no supervisado, para abordar los desafíos en la segmentación de imágenes de diagnóstico dental en niños y adultos. El objetivo es no solo facilitar la detección de caries dental a partir de una radiografía, sino también diferenciar otras enfermedades dentales pediátricas. 
+Este proyecto emplea el aprendizaje no supervisado para segmentar imágenes de diagnóstico dental en niños y adultos, con el objetivo de detectar caries y otras enfermedades dentales pediátricas. El desafío principal es desarrollar una herramienta precisa y eficiente para la detección y segmentación de caries en radiografías panorámicas dentales pediátricas, dado que los datos de imágenes carecen de etiquetas detalladas.
 
-El principal desafío es la necesidad de desarrollar una herramienta de detección y segmentación de caries dental en radiografías panorámicas dentales pediátricas que sea efectiva, precisa y eficiente. Nuestro enfoque en el aprendizaje no supervisado se debe a la naturaleza de los datos de imágenes de diagnóstico dental, que a menudo carecen de etiquetas detalladas o anotaciones precisas necesarias para tareas específicas de segmentación y detección. 
+Actualmente, el proyecto se encuentra en la etapa de evaluación de resultados, después de aplicar técnicas de reducción de dimensionalidad y segmentación en un conjunto de datos de radiografías dentales de niños y adultos. Se utilizó el algoritmo DBSCAN, que se basa en la densidad de puntos, para lograr una segmentación efectiva.
 
-El proyecto se encuentra en una etapa inicial enfocada en la preparación de los datos utilizando un conjunto de datos de radiografías panorámicas dentales de niños y adultos. Para lograr una segmentación efectiva de las imágenes de diagnóstico dental, planeamos utilizar el algoritmo DBSCAN (Density-Based Spatial Clustering of Applications with Noise), que se basa en la densidad de puntos en el espacio de datos y es especialmente adecuado para identificar clusters de diferentes formas y tamaños. 
+Los resultados tienen un gran potencial de interés para empresas de tecnología médica y odontológica, así como para departamentos de salud y programas gubernamentales de atención dental. Ofrecen una solución eficaz de almacenamiento de imágenes y la posibilidad de automatizar la identificación de afecciones dentales, incluyendo la caries. Además, este proyecto contribuye significativamente a abordar un problema de salud pública que afecta a los niños, generando un impacto positivo en su bienestar y calidad de vida a largo plazo.
 
-Los resultados obtenidos tienen el potencial de ser de gran interés para empresas de tecnología médica y odontológica, así como para departamentos de salud y programas gubernamentales de atención médica dental para niños y adultos. Además, este proyecto se presenta como una contribución esencial para abordar un problema de salud pública que afecta a una parte vulnerable de la población, los niños, un impacto positivo en su bienestar y calidad de vida a largo plazo.
 
 ## Descripción detallada de los datos
 
@@ -22,15 +21,15 @@ El conjunto de datos contiene tres carpetas con 4.498 imágenes de diferentes ti
 
 **Segmentación de dientes adultos.** 4.012 imágenes distribuídas en conjuntos de entrenamiento y prueba que fueron usadas para realizar segmentación semántica, es decir, para detectar elementos particulares en ellas.
 
-![Alt text](../figs/ProjectSample1.png)
+![Alt text](figs/ProjectSample1.png)
 
 **Segmentación de caries dental infantil.** 386 imágenes separadas para entrenamiento y prueba que fueron usadas para realizar segmentación de instancias, es decir, para detectar condiciones particulares de los dientes eliminando el ruido alrededor de ellos.
 
-![Alt text](../figs/ProjectSample2.png)
+![Alt text](figs/ProjectSample2.png)
 
 **Detección de enfermedades dentales pediátricas.** 100 imágenes distribuídas en conjuntos de entrenamiento y prueba que fueron usadas para realizar detección de objetos. 
 
-![Alt text](../figs/ProjectSample3.png)
+![Alt text](figs/ProjectSample3.png)
 
 El tamaño que ocupa una imagen en disco está entre 15 Kb y 22 Mb con un promedio por imagen de 2.7 Mb, notando que en este aspecto la desviación estándar es 41.135, lo cual es bastante considerable.
 
